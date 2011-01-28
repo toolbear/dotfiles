@@ -1,0 +1,18 @@
+#!/usr/bin/env perl
+
+use strict; use warnings; use utf8;
+
+use Cwd();
+
+my $MAX = $ARGV[0] || 77;
+
+my $dir = Cwd::getcwd();
+$dir =~ s/$ENV{HOME}/~/;
+if (length($dir) > $MAX) {
+    my $left = index($dir, "/") + 1;
+    $dir = substr($dir, 0, $left) . "..." . substr($dir, -($MAX - $left));
+}
+
+print $dir;
+
+1;
