@@ -1,0 +1,16 @@
+[^.]*
+/.Trash/
+/.Xauthority
+/.rnd
+/.eclipse_keyring
+
+# history type files
+/.history
+/.recentf
+/.viminfo
+/*_history
+/.lesshst
+/.ido.last
+
+# don't care to track for now
+/.wireshark
