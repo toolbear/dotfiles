@@ -17,3 +17,8 @@
 
 [color]
         ui = auto
+
+[color "diff"]
+        meta = ul
+        frag = ul
+        old = normal dim
