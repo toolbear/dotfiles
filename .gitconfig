@@ -20,7 +20,7 @@
 [color "diff"]
     meta = bold
     frag = cyan ul
-    old = cyan dim
+    old = cyan
 
 [merge]
     keepBackup = false;
