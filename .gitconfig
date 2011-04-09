@@ -19,5 +19,5 @@
     ui = auto
 [color "diff"]
     meta = bold
-    frag = ul
-    old = normal dim
+    frag = cyan ul
+    old = cyan dim
