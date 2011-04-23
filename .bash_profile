@@ -25,6 +25,7 @@ export LESS="\
     --quit-if-one-screen \
     --quit-on-intr \
     --RAW-CONTROL-CHARS \
+    --tabs=4 \
 "
 export HISTCONTROL=erasedups
 export HISTFILE=$HOME/.history
