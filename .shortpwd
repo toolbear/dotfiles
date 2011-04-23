@@ -6,7 +6,7 @@ use Cwd();
 
 my $MAX = $ARGV[0] || 77;
 
-my $dir = Cwd::getcwd();
+my $dir = Cwd::getcwd() || "you are on a grey featureless plane (formerly $ENV{PWD})";
 $dir =~ s/$ENV{HOME}/~/;
 if (length($dir) > $MAX) {
     my $left = index($dir, "/") + 1;
