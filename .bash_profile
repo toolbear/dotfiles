@@ -7,9 +7,8 @@ fi
 
 # User specific environment and startup programs
 
-export PATH=$HOME/bin:/opt/jruby/bin:/opt/scala/bin:/usr/local/mysql/bin:/opt/groovy/bin:/opt/flex_sdk/bin:$PATH
+export PATH=$HOME/bin:/usr/local/mysql/bin:$PATH
 export LC_CTYPE=en_US.UTF-8
-export PYTHONPATH=$HOME/lib/python:$PYTHONPATH
 export JAVA_OPTS="-Dfile.encoding=utf8"
 
 #-----------------------------------------------------------------------------
