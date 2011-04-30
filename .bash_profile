@@ -31,3 +31,4 @@ export HISTFILE=$HOME/.history
 export HISTFILESIZE=50000
 
 . ~/.nvm/nvm.sh
+. ~/.svm/svm.sh
