@@ -17,7 +17,8 @@ alias vi=thwap
 alias vim=thwap
 alias realvi=/usr/bin/vim
 alias realvim=/usr/bin/vim
-alias e='emacsclient --no-wait'
+alias emacs=aquamacs
+alias e=emacs
 
 # Git
 alias go='git checkout '

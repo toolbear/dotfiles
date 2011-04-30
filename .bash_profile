@@ -14,7 +14,7 @@ export JAVA_OPTS="-Dfile.encoding=utf8"
 #-----------------------------------------------------------------------------
 
 stty erase 
-export EDITOR=emacsclient
+export EDITOR=e
 
 export LESS="\
     --hilite-unread \
