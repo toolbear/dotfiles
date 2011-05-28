@@ -12,7 +12,6 @@ alias dp="pushd > >(sed 's/ / ○ /g') -0"
 
 # Learning emacs
 alias thwap="echo -e '\n\n\n*THWAP*\n\n\n'; sleep 1; emacs"
-#alias edit=thwap
 alias vi=thwap
 alias vim=thwap
 alias realvi=/usr/bin/vim
