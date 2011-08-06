@@ -32,3 +32,4 @@ export HISTFILESIZE=50000
 
 . ~/.nvm/nvm.sh
 . ~/.svm/svm.sh
+. ~/.flow/flow.sh
