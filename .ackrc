@@ -1,3 +1,4 @@
 --type-set=groovy=.groovy,.gradle
 --type-set=scala=.scala
 --type-set=markdown=.md,.markdown
+--type-add=ruby=.haml
