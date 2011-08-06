@@ -3,7 +3,7 @@ ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="robbyrussell"
+ZSH_THEME="kphoen"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -20,6 +20,11 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
+plugins+=brew
+plugins+=osx
+plugins+=(bundler gem rails3 ruby rvm)
+plugins+=(node npm)
+plugins+=(svm)
 
 source $ZSH/oh-my-zsh.sh
 
