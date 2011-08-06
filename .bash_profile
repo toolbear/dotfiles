@@ -7,7 +7,7 @@ fi
 
 # User specific environment and startup programs
 
-export PATH=$HOME/bin:/usr/local/mysql/bin:$PATH
+export PATH=$HOME/bin:/usr/local/mysql/bin:/usr/local/bin:$PATH
 export LC_CTYPE=en_US.UTF-8
 export JAVA_OPTS="-Dfile.encoding=utf8"
 
