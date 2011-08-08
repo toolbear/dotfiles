@@ -1,21 +1,21 @@
 [user]
-    name = Tim Taylor
-    email = tim@tool-man.org
+  name = Tim Taylor
+  email = tim@tool-man.org
 
 [core]
-    autocrlf = input
-    safecrlf = true
+  autocrlf = input
+  safecrlf = true
 
 [alias]
-    co = checkout
-    wc = whatchanged
-    ci = commit
-    st = status
-    hist = log --pretty=format:\"%C(yellow)%h%Creset %ad | %s%d [%an]\" --graph --date=short
+  co = checkout
+  wc = whatchanged
+  ci = commit
+  st = status
+  hist = log --pretty=format:\"%C(yellow)%h%Creset %ad | %s%d [%an]\" --graph --date=short
 
 [color]
-    ui = auto
+  ui = auto
 
 [merge]
-    keepBackup = false
-    tool = p4merge
+  keepBackup = false
+  tool = p4merge
