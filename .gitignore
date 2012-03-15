@@ -19,6 +19,7 @@
 .zsh-update
 
 # s3kr3ts!
+/.ssh/
 /.twitter
 
 # don't care to track for now
@@ -28,5 +29,4 @@
 /.nvm/
 /.svm/
 /.oh-my-zsh/
-/.emacs.d/
 /.flow/
