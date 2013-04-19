@@ -3,3 +3,4 @@
 --type-set=markdown=.md,.markdown
 --type-add=ruby=.haml
 --type-set=sass=.scss,.sass
+--type-set=puppet=.pp
