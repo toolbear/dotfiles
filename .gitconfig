@@ -10,7 +10,7 @@
   co = checkout
   wc = whatchanged
   ci = commit
-  st = status
+  st = status --short
   hist = log --pretty=format:\"%C(yellow)%h%Creset %ad | %s%d [%an]\" --graph --date=short
 
 [color]
