@@ -23,11 +23,5 @@
 [push]
   default = current
 
-[branch]
-  autosetuprebase = remote
-
-[diff]
-  noprefix = true
-
 [rebase]
   autosquash = true
