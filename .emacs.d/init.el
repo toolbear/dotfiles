@@ -8,11 +8,6 @@
 (load-theme 'solarized-dark t)
 (add-to-list 'auto-mode-alist '("COMMIT_EDITMSG$" . diff-mode))
 
-(require 'package)
-(add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
-(package-initialize)
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
