@@ -1,3 +1,5 @@
+(load "server")
+(unless (server-running-p) (server-start))
 (when (display-graphic-p)
   ;; FIXME style/adstyle "Light" is ignored if "Regular" is installed
   (set-face-attribute 'default nil :font "Source Code Pro Light 14")
