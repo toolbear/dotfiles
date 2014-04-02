@@ -3,3 +3,4 @@
 (depends-on "boxed-wine" :git "https://github.com/toolbear/boxed-wine.git")
 (depends-on "diff-hl")
 (depends-on "pallet")
+(depends-on "puppet-mode")
