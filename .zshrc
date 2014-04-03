@@ -1,5 +1,3 @@
-source /opt/boxen/env.sh
-
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -36,3 +34,4 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+source /opt/boxen/env.sh
