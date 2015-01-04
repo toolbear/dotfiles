@@ -4,3 +4,4 @@
 (depends-on "diff-hl")
 (depends-on "pallet")
 (depends-on "puppet-mode")
+(depends-on "coffee-mode")
