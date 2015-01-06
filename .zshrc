@@ -50,6 +50,7 @@ ZSH_CUSTOM=$ZSH/toolbear
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 plugins+=(osx)
+plugins+=(terminalapp)
 
 source $ZSH/oh-my-zsh.sh
 
