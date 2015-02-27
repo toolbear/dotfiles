@@ -5,3 +5,4 @@
 (depends-on "pallet")
 (depends-on "puppet-mode")
 (depends-on "coffee-mode")
+(depends-on "multi-term")
