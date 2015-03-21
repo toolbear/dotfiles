@@ -6,3 +6,6 @@
 (depends-on "puppet-mode")
 (depends-on "coffee-mode")
 (depends-on "multi-term")
+(depends-on "flx-ido")
+(depends-on "ido-ubiquitous")
+(depends-on "ido-vertical-mode")
