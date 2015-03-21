@@ -1,0 +1,5 @@
+(setq line-number-mode t)
+(setq column-number-mode t)
+(global-linum-mode t)
+(global-set-key (kbd "C-x l") 'goto-line)
+(setq linum-format "%3d\u2502")
