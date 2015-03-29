@@ -12,4 +12,5 @@
  '(col-highlight ((t (:inherit highlight))))
  '(fringe ((((background dark)) (:background "#1b181b")) (((background light)) (:background "#f7f3f7"))))
  '(highlight ((((type x pm w32 ns) (background dark)) (:background "#292329")) (((type x pm w32 ns) (background light)) (:background "#d8cad8")) (((type tty) (background dark)) (:background "color-18")) (((type tty) (background light)) (:background "color-21"))))
- '(hl-line ((t (:inherit highlight)))))
+ '(hl-line ((t (:inherit highlight))))
+ '(vertical-border ((((type tty) (background dark)) (:inherit mode-line-inactive :background "black" :foreground "brightblack")) (((type tty) (background light)) (:inherit mode-line-inactive :background "brightwhite" :foreground "white")))))
