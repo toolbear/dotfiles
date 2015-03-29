@@ -1,5 +1,9 @@
 (require 'multi-term)
-(setq multi-term-program "zsh")
+(setq
+  default-terminal-coding-system "utf-8-unix"
+  multi-term-program "zsh")
+(global-unset-key (kbd "C-x m"))
+(define-key global-map (kbd "C-x m") 'multi-term)
 (add-hook 'term-mode-hook
   (lambda ()
     (setq term-buffer-maximum-size 10000)
