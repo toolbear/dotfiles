@@ -9,4 +9,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(fringe ((((background dark)) (:background "#1b181b")) (((background light)) (:background "#f7f3f7")))))
+ '(col-highlight ((t (:inherit highlight))))
+ '(fringe ((((background dark)) (:background "#1b181b")) (((background light)) (:background "#f7f3f7"))))
+ '(highlight ((((type x pm w32 ns) (background dark)) (:background "#292329")) (((type x pm w32 ns) (background light)) (:background "#d8cad8")) (((type tty) (background dark)) (:background "color-18")) (((type tty) (background light)) (:background "color-21"))))
+ '(hl-line ((t (:inherit highlight)))))
