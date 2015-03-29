@@ -7,10 +7,11 @@
 (add-hook 'term-mode-hook
   (lambda ()
     (setq term-buffer-maximum-size 10000)
-    (setq show-trailing-whitespace nil)
-    ;;(autopair-mode -1)
-    ;;(colorful-points -1)
-    (add-to-list 'term-bind-key-alist '("C-M-[" . multi-term-prev))
-    (add-to-list 'term-bind-key-alist '("C-M-]" . multi-term-next))
     (define-key term-raw-map (kbd "C-y") 'term-paste)
-    ))
+    (setq show-trailing-whitespace nil)
+
+    (let ((disabled-modes '(autopair-mode
+                        colorful-points
+                        linum-mode
+                        crosshairs-mode)))
+      (mapc (lambda (f) (when (fboundp f) (funcall f -1))) disabled-modes))))
