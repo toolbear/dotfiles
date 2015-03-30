@@ -1,9 +1,26 @@
-(global-set-key (kbd "M-1") (lambda () (interactive) (select-frame-by-name "tab#1")))
-(global-set-key (kbd "M-2") (lambda () (interactive) (select-frame-by-name "tab#2")))
-(global-set-key (kbd "M-3") (lambda () (interactive) (select-frame-by-name "tab#3")))
-(global-set-key (kbd "M-4") (lambda () (interactive) (select-frame-by-name "tab#4")))
-(global-set-key (kbd "M-5") (lambda () (interactive) (select-frame-by-name "tab#5")))
-(global-set-key (kbd "M-6") (lambda () (interactive) (select-frame-by-name "tab#6")))
-(global-set-key (kbd "M-7") (lambda () (interactive) (select-frame-by-name "tab#7")))
-(global-set-key (kbd "M-8") (lambda () (interactive) (select-frame-by-name "tab#8")))
-(global-set-key (kbd "M-9") (lambda () (interactive) (select-frame-by-name "tab#9")))
+;; -*- lexical-binding: t -*-
+(require 'dash)
+
+(let ((N 0))
+  (defun tabs:new ()
+    "Create a new frame named `tab#N` where `N` is the next available tab number."
+    (interactive)
+    (setq N (+ 1 N))
+    (let* ((name (format "tab#%d" N))
+           (parameters `((name . ,name))))
+      (with-current-buffer "*scratch*"
+        (let ((frame (make-frame parameters)))
+          (unless (display-graphic-p) (select-frame frame)))))))
+
+(defun tabs:select (N)
+  "Select the frame named `tab#N`."
+  (interactive "p")
+  (select-frame-by-name (format "tab#%d" N)))
+
+(global-set-key (kbd "M-t") 'tabs:new)
+(dotimes (N 8)
+  (global-set-key
+   (kbd (format "M-%d" (+ 1 N)))
+   (lambda ()
+     (interactive)
+     (tabs:select (+ 1 N)))))
