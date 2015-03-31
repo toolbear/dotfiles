@@ -2,4 +2,4 @@
   (blink-cursor-mode -1)
   (set-default 'cursor-type '(hbar . 1))
   (set-default 'cursor-in-non-selected-windows 'hollow))
-(crosshairs +1)
+(global-hl-line-mode +1)
