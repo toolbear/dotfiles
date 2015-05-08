@@ -16,3 +16,13 @@
                           crosshairs-mode)))
     (mapc (lambda (f) (when (fboundp f) (funcall f -1))) disabled-modes)))
 (add-hook 'term-mode-hook 'toolbear:entered-term-mode)
+
+(defun toolbear:term-handle-ansi-escape (proc char)
+  "Handle additional ansi escapes."
+  (cond
+   ;; \E[nG - Cursor Horizontal Absolute, e.g. move cursor to column n (terminfo: cuf, cuf1)
+   ((eq char ?G)
+    (let ((col (min term-width (max 0 term-terminal-parameter))))
+      (term-move-columns (- col (term-current-column)))))
+   (t)))
+(advice-add 'term-handle-ansi-escape :before #'toolbear:term-handle-ansi-escape)
