@@ -8,6 +8,8 @@
 (depends-on "coffee-mode")
 (depends-on "multi-term")
 (depends-on "flx-ido")
+(depends-on "groovy-mode")
+(depends-on "haml-mode")
 (depends-on "ido-ubiquitous")
 (depends-on "ido-vertical-mode")
 (depends-on "multiple-cursors")
