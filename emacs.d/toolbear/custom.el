@@ -4,6 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ag-reuse-buffers t)
+ '(coffee-tab-width 2)
  '(compilation-auto-jump-to-first-error t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
