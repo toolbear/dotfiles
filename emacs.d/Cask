@@ -1,5 +1,6 @@
 (source melpa)
 
+(depends-on "ag")
 (depends-on "boxed-wine" :git "https://github.com/toolbear/boxed-wine.git")
 (depends-on "diff-hl")
 (depends-on "pallet")
