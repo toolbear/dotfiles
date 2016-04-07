@@ -5,6 +5,7 @@
 [core]
   autocrlf = input
   safecrlf = true
+  pager = less --raw-control-chars
 
 [alias]
   co = checkout
@@ -15,10 +16,6 @@
 
 [color]
   ui = auto
-
-[merge]
-  keepBackup = false
-  tool = p4merge
 
 [push]
   default = current
