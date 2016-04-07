@@ -2,7 +2,7 @@
 (let* ((background-mode
 	  (if (display-graphic-p)
         'dark
-      (intern (getenv "TERM_BACKGROUND_MODE"))))
+      (let ((bg (getenv "TERM_BACKGROUND_MODE"))) (if bg (intern bg) 'light))))
     (theme-name "atelierheath")
     (theme (intern (concat "base16-" theme-name "-" (symbol-name background-mode)))))
   (unless (display-graphic-p)
