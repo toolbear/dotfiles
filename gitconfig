@@ -19,7 +19,7 @@
   ui = auto
 
 [push]
-  default = current
+  default = upstream
 
 [rebase]
   autosquash = true
