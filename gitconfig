@@ -10,9 +10,10 @@
 [alias]
   co = checkout
   wc = whatchanged
-  ci = commit
   st = status --short
   hist = log --pretty=format:\"%C(yellow)%h%Creset %ad | %s%d [%an]\" --graph --date=short
+  fa = fetch --all --prune --tags
+  ff = merge --ff-only
 
 [color]
   ui = auto
@@ -22,3 +23,6 @@
 
 [rebase]
   autosquash = true
+
+[github]
+	user = toolbear
