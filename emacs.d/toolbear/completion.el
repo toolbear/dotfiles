@@ -4,15 +4,13 @@
 
 (require 'ido)
 (ido-mode 1)
+(ido-everywhere 1)
 
 (require 'flx-ido)
 (flx-ido-mode 1)
 
-(require 'ido-ubiquitous)
-(ido-ubiquitous-mode)
-
-(require 'flx-ido)
-(flx-ido-mode)
+(require 'ido-completing-read+)
+(ido-ubiquitous-mode 1)
 
 (require 'ido-vertical-mode)
 (ido-vertical-mode 1)
