@@ -5,7 +5,11 @@
  ;; If there is more than one, they won't work right.
  '(ag-reuse-buffers t)
  '(coffee-tab-width 2)
- '(compilation-auto-jump-to-first-error t))
+ '(compilation-auto-jump-to-first-error t)
+ '(custom-enabled-themes (quote (base16-atelier-heath)))
+ '(custom-safe-themes
+   (quote
+    ("41eb3fe4c6b80c7ad156a8c52e9dd6093e8856c7bbf2b92cc3a4108ceb385087" "5f99055206ed6a1b9958f7dd5eaa9f884f8b5a8678bd0c5e2622aced5c4a1be7" default))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
