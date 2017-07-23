@@ -1,7 +1,19 @@
 #!/usr/bin/env zsh
-set -e
 
-daemon=$(git config --get emacs.daemon)
+set -e
+setopt extended_glob
+
+typeset -a candidates
+typeset -a lines
+candidates=((../)#.emacs.daemon(.N:a))
+for d in $candidates ; do
+  lines=("${(f)$(< $d)}")
+  if (( $#lines > 0 )); then
+    daemon=$lines[1]
+  else
+    daemon=
+  fi
+done
 emacsclient=(${(A)$(/usr/bin/type -ap emacsclient)})
 if [[ -n "$daemon" ]]; then
   exec $emacsclient[2] --alternate-editor= -s "$daemon" "$@"
