@@ -1,0 +1,5 @@
+gradle/.nebulatmp/
+gradle/caches/
+gradle/daemon/
+gradle/native/
+gradle/wrapper/
