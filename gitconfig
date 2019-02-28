@@ -14,6 +14,7 @@
   hist = log --pretty=format:\"%C(yellow)%h%Creset %ad | %s%d [%an]\" --graph --date=short
   fa = fetch --all --prune --tags
   ff = merge --ff-only
+  logbranch = "for-each-ref --sort=-committerdate refs/heads/ --format='[%1B[0;31m]%(refname:short)[%1B[m]   %(subject)' "
 
 [color]
   ui = auto
@@ -25,4 +26,7 @@
   autosquash = true
 
 [github]
-	user = toolbear
+  user = toolbear
+
+[credential]
+  helper = osxkeychain
