@@ -4,5 +4,5 @@ setopt extendedglob
 
 local dotfiles=([[:alnum:]]*~script*)
 for f in $dotfiles ; do
-  ln -s ".dotfiles/$f" ~/."$f"
+  ln -sf ".dotfiles/$f" ~/."$f"
 done
