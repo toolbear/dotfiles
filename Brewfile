@@ -29,7 +29,7 @@ brew 'yarn'
 #brew 'ruby-build'
 #cask 'java' unless system '/usr/libexec/java_home --failfast --version 9+ >/dev/null 2>&1'
 #cask 'java8' unless system '/usr/libexec/java_home --failfast --version 1.8 >/dev/null 2>&1'
-cask 'zulu8' unless system '/usr/libexec/java_home --failfast --version 1.8 >/dev/null 2>&1'
+cask 'zulu8' unless system '/usr/libexec/java_home --failfast --version 8 >/dev/null 2>&1'
 brew 'bower'
 brew 'imagemagick'
 
