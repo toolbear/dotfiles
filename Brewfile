@@ -10,11 +10,10 @@ brew 'cask'
 
 brew 'ag'
 cask 'alfred'
-brew 'emacs', args: ['with-gnutls', 'without-librsvg', 'without-libxml2']
+brew 'emacs', args: ['without-librsvg', 'without-libxml2']
 #cask 'font-sauce-code-powerline'
 cask 'font-source-code-pro'
 cask 'iterm2'
-cask 'slack'
 cask 'spectacle'
 brew 'tree'
 brew 'watch'
