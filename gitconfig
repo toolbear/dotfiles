@@ -1,10 +1,10 @@
 [user]
   name = Tim Taylor
-  email = tim@toolbear.io
+  email = timt@netflix.com
 
 [core]
-  autocrlf = input
-  safecrlf = true
+  #autocrlf = input
+  #safecrlf = true
   pager = less --raw-control-chars
 
 [alias]
